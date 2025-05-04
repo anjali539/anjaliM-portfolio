@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anjali - Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/lib...">
+    <!-- Custom css link-->
+    <link rel="stylesheet" href="p.CSS">
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <!-- Css icon-->
+    <link rel="icon" href="assets/female2.png" style="height: fit-content; width: fit-content;">
+    <!-- bOXICON LINK-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!-- remixicons link-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <style>
+        @keyframes shake {
+            0% {
+                transform: translate(1px, 1px) rotate(0deg);
+            }
+
+            10% {
+                transform: translate(-1px, -2px) rotate(-1deg);
+            }
+
+            20% {
+                transform: translate(-3px, 0px) rotate(1deg);
+            }
+
+            30% {
+                transform: translate(3px, 2px) rotate(0deg);
+            }
+
+            40% {
+                transform: translate(1px, -1px) rotate(1deg);
+            }
+
+            50% {
+                transform: translate(-1px, 2px) rotate(-1deg);
+            }
+
+            60% {
+                transform: translate(-3px, 1px) rotate(0deg);
+            }
+
+            70% {
+                transform: translate(3px, 1px) rotate(-1deg);
+            }
+
+            80% {
+                transform: translate(-1px, -1px) rotate(1deg);
+            }
+
+            90% {
+                transform: translate(1px, 2px) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(1px, -2px) rotate(-1deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div onclick="topFunction()" id="myBtn" class="scroll-down">
+        <a href="#">
+            <i class="ri-arrow-down-s-fill"></i>
+        </a>
+    </div>
+    <header>
+        <ul class="sidebar">
+            <li onclick=hidesidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="14px"
+                        viewBox="0 -960 960 960" width="14px" fill="#5f6368">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg></a></li>
+            <li><a href="#home"><i class="ri-home-2-fill"></i> Home</a></li>
+            <li><a href="#about"><i class="ri-user-4-fill"></i> About</a></li>
+            <li><a href="#skill"><i class="ri-code-box-fill"></i> Skills</a></li>
+            <li><a href="#Qualification"><i class="ri-briefcase-fill"></i> Qualification</a></li>
+            <li><a href="#project"><i class="ri-file-code-fill"></i> Projects</a></li>
+            <li><a href="#contact1"><i class="ri-contacts-fill"></i> Contact</a></li>
+
+        </ul>
+        <ul class="navlist first">
+            <li class="hideOnMobile"><a href="#home"><i class="ri-home-2-fill"></i> Home</a></li>
+            <li class="hideOnMobile"><a href="#about"><i class="ri-user-4-fill"></i> About</a></li>
+            <li class="hideOnMobile"><a href="#skill"><i class="ri-code-box-fill"></i> Skills</a></li>
+            <li class="hideOnMobile"><a href="#Qualification"><i class="ri-briefcase-fill"></i> Qualification</a></li>
+            <li class="hideOnMobile"><a href="#project"><i class="ri-file-code-fill"></i> Projects</a></li>
+            <li class="hideOnMobile"><a href="#contact1"><i class="ri-contacts-fill"></i> Contact</a></li>
+            <li> <img src="assets/moon1.png" id="icon1"></li>
+            <li class="menu-button" onclick=showSidebar()><a class="decor" href="#"><svg
+                        xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#5f6368">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg></a></li>
+        </ul>
+
+
+    </header>
+
+    <section class="home1" id="home">
+        <div class="home1-text">
+            <div class="f1">
+                <i>&nbsp;Hey, Myself</i>
+            </div>
+            <span class="purple">Anjali Mishra</span>
+            <div class="f2">I am a <span id="element"></span>
+            </div>
+            <h5>A 2nd year Student of Computer Science who is quite passionate about
+                learning new skills.
+            </h5>
+            <a href="#about">Let's Start</a>
+            <a href="#contact1" class="ctaa">Contact Me</a>
+        </div>
+
+        <div class="home1-img">id="icon3">
+        </div>
+        <div class="web-icons">
+            <a href="www.linkedin.com/in/anjali-mishra-19ba3b325" target="_blank"><i
+                    class="ri-linkedin-box-fill"></i></a>
+            <a href="https://github.com/anjali539/index.HTML.git" target="_blank"><i class="ri-github-fill"></i></a>
+            <a href="anjalimish810@gmail.com" target="_blank"><i class="ri-mail-fill"></i></a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h5 class="about-title">Get to know more</h5>
+        <h1 class="about-subtitle"><i class="ri-user-3-fill"></i> About Me</h1>
+        <div class="about-content">
+            <div class="contain">
+                <div class="about-img"></div>
+            </div>
+            <div class="about-text">
+                <p>Hi, I'm Anjali Mishra, a passionate self-learner exploring and building projects in front-end
+                    development, data structure and algorithm. I have experience with technologies
+                    like Python, HTML, CSS, JavaScript, C/C++. I enjoy solving complex problems through code, focusing on
+                    scalable systems and smooth user interfaces, while continuously expanding my knowledge.
+                </p>
+                <a href="https://drive.google.com/file/d/1zp8-OvSk9Aaw8m6R1eChC7Mo7q2fuVBA/view?usp=sharing"
+                    target="_blank">Resume <i class="ri-download-2-fill"></i></a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="skills" id="skill">
+        <h1 class="skill-title"><i class="ri-code-box-fill"></i> Skills</h1>
+
+        <div class="skill-section">
+            <p class="skill-section-p active-link2" onclick="opentab1('language')">Languages</p>
+            <p class="skill-section-p" onclick="opentab1('tool')">Tools & Platforms</p>
+            <p class="skill-section-p" onclick="opentab1('Soft')">Soft skills</p>
+        </div>
+        <div class="skill-name active-tab2" id="language">
+            <div class="flip">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="icons8-python-48.png" alt="Avatar">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>PYTHON</h1>
+                            <p>Versatile language for powerful, scalable solutions in various domains.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="icons8-html5-48.png" alt="Avatar">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>HTML</h1>
+                            <p>It's core technology for creating structured, semantic web content with ease.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="icons8-css-26.png" alt="Avatar">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>CSS</h1>
+                            <p>It styles web pages with precision, enhancing visual aesthetics and layout.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="icons8-javascript-48.png" alt="Avatar">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>JAVASCRIPT</h1>
+                            <p>Adding dynamic functionality and interactive elements to web applications.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="icons8-c-programming-48.png" alt="Avatar">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>C</h1>
+                            <p>It is a foundational programming language known for its efficiency and control over system
+                                resources.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="icons8-c++-48.png" alt="Avatar">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>C++</h1>
+                            <p>Extend of C with object-oriented features, offering high performance and complex data
+                                handling.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="icons8-mysql-48.png" alt="Avatar">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>MYSQL</h1>
+                            <p>It is an open-source,that uses Structured Query Language (SQL) to manage and manipulate data.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="skill-name" id="tool">
+            <div class="flip">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="icons8-visual-studio-code-48.png" alt="Avatar">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Visual Studio Code </h1>
+                            <p>Lightweight yet powerful code editor with rich support for multiple programming
+                                languages.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="icons8-mysql-48 (1).png" alt="Avatar">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>MySQL</h1>
+                            <p>Reliable relational database management system for managing and querying structured data.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="skill-name" id="Soft">
+            <div class="flip">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="th.jpg" alt="Avatar">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Communication</h1>
+                            <p>I have the ability to convey ideas clearly and effectively in various contexts.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="th (1).jpg" alt="Avatar">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>LeaderShip</h1>
+                            <p>I inspires and guides teams towards achieving common goals and driving success.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="th (2).jpg" alt="Avatar">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Presentation</h1>
+                            <p>Delivering clear and engaging presentations to effectively communicate ideas and
+                                information.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="pngtree-time-management-png-png-image_13375461.png" alt="Avatar">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Time Management</h1>
+                            <p>Organizing and prioritizing tasks to maximize productivity and meet deadlines.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="Qualification1" id="Qualification">
+        <h1 class="Qualification-title"><i class="ri-code-box-fill"></i> Qualification</h1>
+        <div class="Qualification-section">
+            <p class="Qualification-section-p active-link " onclick="opentab3('education')">Education</p>
+            <p class="Qualification-section-p" onclick="opentab3('internship')">Internship</p>
+            <p class="Qualification-section-p" onclick="opentab3s('others')">Others</p>
+        </div>
+        <div class="timeline active-tab" id="education">
+            <div class="container left">
+                <div class="content">
+                    <h1> <img src="logo_mit.png"> RGPV </h1>
+                    <h3>B.Tech in Computer Science Engineering from Mahakal Institute of Technology, Ujjain
+                    </h3>
+                    <h2><i class="ri-calendar-event-fill"></i> 2023-27 | Pursuing </h2>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h1> <img src="CBSE-LOGO.jpg"> CBSE </h1>
+                    <h3>Senior Secondary Education in PCM Stream from Pioneer Public School, Dewas
+                    </h3>
+                    <h2><i class="ri-calendar-event-fill"></i> 2022-23 | Completed </h2>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="content">
+                    <h1> <img src="CBSE-LOGO.jpg"> CBSE </h1>
+                    <h3>Higher Secondary Education from Pioneer Public School, Dewas
+                    </h3>
+                    <h2><i class="ri-calendar-event-fill"></i> 2020-21 | Completed </h2>
+                </div>
+            </div>
+        </div>
+        <div class="timeline" id="internship">
+            <div class="container left">
+                <div class="content">
+                    <h1>  C programming Intern </h1>
+                    <h3>At Simplie learn where I have :-
+                        <h3><i class="ri-arrow-right-circle-fill"></i>Proficient in C programming, with a solid understanding of variables, control structures, functions, arrays, and pointers.
+                        </h3>
+                        <h3> <i class="ri-arrow-right-circle-fill"></i>Strong grasp of C programming concepts including data structures (linked lists, stacks, queues), dynamic memory allocation, file handling, and pointer arithmetic.</h3>
+
+                    <h2> <button><a href="https://drive.google.com/file/d/1Q1KYaRTT8Iep2L3l9JGowXdcKT2W9ROT/view?usp=sharing"
+                                target="_blank">Certificate <i class="ri-download-2-fill"></i></a> </button></h2>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h1> C++ Programming Intern </h1>
+                    <h3>At CodSoft I have :-
+                        <h3> <i class="ri-arrow-right-circle-fill"></i>Familiar with C++ programming, including object-oriented concepts such as classes, objects, constructors, and basic file handling. 
+                        </h3>
+                        <h3> <i class="ri-arrow-right-circle-fill"></i>CGood understanding of C++ programming, including object-oriented programming (OOP), inheritance, polymorphism, encapsulation, and abstraction.
+                        </h3>
+                    <h2> <button><a href="https://drive.google.com/file/d/1Tu_plYIsvZAYkzL6YIs2Oi5oRENXncoP/view?usp=sharing"
+                                target="_blank">Certificate <i class="ri-download-2-fill"></i></a> </button></h2>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="content">
+                    <h1> Web development Intern </h1>
+                    <h3>At CodSoft Here I have :-
+                        <h3><i class="ri-arrow-right-circle-fill"></i>Learned HTML, CSS, and JavaScript to create clean,
+                            responsive web pages.</h3>
+                        <h3><i class="ri-arrow-right-circle-fill"></i>Enhanced front-end skills by building interactive,
+                            user-friendly features.</h3>
+                    </h3>
+                    <h2> <button><a href="https://drive.google.com/file/d/10LqiXDxKmAXceFTEq-Fg_7Kig3STdlz4/view?usp=sharing"
+                                target="_blank">Certificate <i class="ri-download-2-fill"></i></a> </button></h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="project">
+        <h1 class="project-title"><i class="ri-file-code-fill"></i> Projects</h1>
+        <div class="project-section">
+            <p class="project-section-p active-link1" onclick="opentab('projectname')">Projects</p>
+            <p class="project-section-p" onclick="opentab('Certificatename')">Certificates</p>
+        </div>
+        <div class="container1 city active-tab1" id="projectname">
+            <div class="card__container swiper">
+                <div class="card__content">
+                    <div class="swiper-wrapper">
+                        <article class="card__article swiper-slide">
+                            <div class="slideshow-container">
+                                <div class="mySlides fade">
+                                </div>
+                                <div class="mySlides fade">
+                                </div>
+                            </div>
+                            <div style="text-align:center">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <div class="card_content">
+                                <h2 class="title">Calculator</h2>
+                                <p class="text">
+                                    For my minor project, I developed a Calculator using HTML,CSS and JAVASCRIPT
+                                    The application will be developed using HTML for the structure, CSS for styling and layout, and
+                                    JavaScript to handle the functionality and logic of the calculator.
+                                </p>
+                                <span class="see-more-btn">See More</span>
+                                <div class="btn10">
+                                    <a href="https://github.com/anjali539/anjali-Portfolio/blob/main/calculator.HTML"
+                                        class="Check-btn" target="_blank">Check Out <i
+                                            class="ri-arrow-right-fill"></i></a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card__article swiper-slide">
+                            <div class="slideshow-container2">
+                                <div class="mySlides2 fade2">
+                                </div>
+                                <div class="mySlides2 fade2">
+                                </div>
+                            </div>
+                            <div style="text-align:center">
+                                <span class="dot2"></span>
+                                <span class="dot2"></span>
+
+                            </div>
+                            <div class="card_content">
+                                <h2 class="title">Currency Converter</h2>
+                                <p class="text">
+                                    Currency Converter using HTML CSS and JavaScript
+                                    The Currency Converter is a web application designed to allow users to quickly and
+                                    easily convert one currency to another based on real-time exchange rates. Users
+                                    can input an amount in their chosen currency, select the target currency, and
+                                    receive an accurate conversion in seconds 
+                                </p>
+                                <span class="see-more-btn">See More</span>
+                                <div class="btn10">
+                                    <a href="https://github.com/anjali539/anjali-Portfolio/blob/main/currency.HTML" class="Check-btn"
+                                        target="_blank">Check Out <i class="ri-arrow-right-fill"></i></a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <!-- Navigation buttons -->
+                <div class="swiper-button-next">
+                </div>
+                <div class="swiper-button-prev">
+                </div>
+            </div>
+        </div>
+
+        <div class="container1 city" id="Certificatename">
+            <div class="card__container swiper">
+                <div class="card__content">
+                    <div class="swiper-wrapper">
+                        <article class="card__article swiper-slide">
+                            <div class="container2 ">
+                                <img src="Simplilearn Certificate-1.png" class="image11">
+                                <div class="overlay1">
+                                    <div class="text111">
+                                        <h4>Job simulation</h4>
+                                        <a href="https://drive.google.com/file/d/1Q1KYaRTT8Iep2L3l9JGowXdcKT2W9ROT/view?usp=sharing"
+                                            target="_blank">View<i class="ri-eye-fill"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card__article swiper-slide">
+                            <div class="container2 ">
+                                <img src="certificate -1.png" class="image11">
+                                <div class="overlay1">
+                                    <div class="text111">
+                                        <h4>C++ Zero to Hero</h4>
+                                        <a href="https://drive.google.com/file/d/1Tu_plYIsvZAYkzL6YIs2Oi5oRENXncoP/view?usp=sharing"
+                                            target="_blank">View<i class="ri-eye-fill"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card__article swiper-slide">
+                            <div class="container2 zoom">
+                                <img src="Anjali Mishra-1.png" class="image11">
+                                <div class="overlay1">
+                                    <div class="text111">
+                                        <h4>Web Development</h4>
+                                        <a href="https://drive.google.com/file/d/10LqiXDxKmAXceFTEq-Fg_7Kig3STdlz4/view?usp=sharing"
+                                            target="_blank">View<i class="ri-eye-fill"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card__article swiper-slide">
+                            <div class="container2 zoom">
+                                <img src="anjali mishra certificate-1.png" class="image11">
+                                <div class="overlay1">
+                                    <div class="text111">
+                                        <h4> C and C++ programming </h4>
+                                        <a href="https://drive.google.com/file/d/1c-NVZ6_xD1cXseAX87CLgbz7hM8HuJkF/view?usp=sharing"
+                                            target="_blank">View<i class="ri-eye-fill"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <!-- Navigation buttons -->
+                <div class="swiper-button-next">
+                </div>
+                <div class="swiper-button-prev">
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact1">
+        <h5 class="contact-title">Want to connect? then</h5>
+        <h1 class="contact-subtitle"><i class="ri-contacts-fill"></i> Contact Me</h1>
+        <div class="contact_container">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                <div class="contact-left-title">
+                    <h2>Get in touch with me, my inbox <i class="ri-inbox-line"></i> is always open!
+                    </h2>
+                </div>
+                <input type="hidden" name="access_key" value="d7231313-1da8-4b25-9b06-28f15b0ab2f8">
+                <input type="text" name="name" placeholder="Your Full Name *" class="contact-inputs" required>
+                <input type="email" name="email" placeholder="Your E-mail *" class="contact-inputs" required>
+                <textarea name="message" placeholder="Your Message *" class="contact-inputs"></textarea>
+                <button type="submit">Send Message<i class="ri-telegram-2-fill"></i></button>
+            </form>
+            <div class="contact-right">
+                <img src="assets/contanct=image.png">
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="foot">
+            👉 Made by ❤️ Anjali Mishra👈
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['2nd year student.', 'Learner.', 'Programmer.', 'Developer.'],
+            typeSpeed: 80,
+            backSpeed: 80,
+            loop: true
+        });
+    </script>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        let slideIndex1 = 0;
+        showSlides1();
+        let slideIndex2 = 0;
+        showSlides2();
+        let slideIndex3 = 0;
+        showSlides3();
+
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+
+
+        function showSlides1() {
+            let x;
+            let slides1 = document.getElementsByClassName("mySlides1");
+            let dots1 = document.getElementsByClassName("dot1");
+            for (x = 0; x < slides1.length; x++) {
+                slides1[x].style.display = "none";
+            }
+            slideIndex1++;
+            if (slideIndex1 > slides1.length) { slideIndex1 = 1 }
+            for (x = 0; x < dots1.length; x++) {
+                dots1[x].className = dots1[x].className.replace(" active", "");
+            }
+            slides1[slideIndex1 - 1].style.display = "block";
+            dots1[slideIndex1 - 1].className += " active";
+            setTimeout(showSlides1, 3000); // Change image every 2 seconds
+        }
+
+
+        function showSlides2() {
+            let y;
+            let slides2 = document.getElementsByClassName("mySlides2");
+            let dots2 = document.getElementsByClassName("dot2");
+            for (y = 0; y < slides2.length; y++) {
+                slides2[y].style.display = "none";
+            }
+            slideIndex2++;
+            if (slideIndex2 > slides2.length) { slideIndex2 = 1 }
+            for (y = 0; y < dots2.length; y++) {
+                dots2[y].className = dots2[y].className.replace(" active", "");
+            }
+            slides2[slideIndex2 - 1].style.display = "block";
+            dots2[slideIndex2 - 1].className += " active";
+            setTimeout(showSlides2, 2000); // Change image every 2 seconds
+        }
+
+
+        function showSlides3() {
+            let z;
+            let slides3 = document.getElementsByClassName("mySlides3");
+            let dots3 = document.getElementsByClassName("dot3");
+            for (z = 0; z < slides3.length; z++) {
+                slides3[z].style.display = "none";
+            }
+            slideIndex3++;
+            if (slideIndex3 > slides3.length) { slideIndex3 = 1 }
+            for (z = 0; z < dots3.length; z++) {
+                dots3[z].className = dots3[z].className.replace(" active", "");
+            }
+            slides3[slideIndex3 - 1].style.display = "block";
+            dots3[slideIndex3 - 1].className += " active";
+            setTimeout(showSlides3, 2000); // Change image every 2 seconds
+        }
+
+
+    </script>
+    <script>
+        let mybutton = document.getElementById("myBtn");
+         window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+         function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!--=============== SWIPER JS ===============-->
+    <script src="swiper-bundle.min.js"></script>
+    <!-- custom js link-->
+    <script src="p.js"></script>
+
+</body>
+
+</html>
